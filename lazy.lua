@@ -7,7 +7,7 @@ require("lazy").setup({
 				require("lzn-auto-require").enable()
 			end,
 		},
-		{ import = "plugins" },
+		{ "acup1/nvf", import = "plugins" },
 		{ "mfussenegger/nvim-dap" },
 		{ "rcarriga/nvim-dap-ui" },
 	},
