@@ -7,7 +7,7 @@ require("lazy").setup({
 				require("lzn-auto-require").enable()
 			end,
 		},
-		{ import = "./plugins" },
+		{ import = "plugins" },
 		{ "mfussenegger/nvim-dap" },
 		{ "rcarriga/nvim-dap-ui" },
 	},
