@@ -24,6 +24,44 @@
     telescope.enable = true;
     autocomplete.nvim-cmp.enable = true;
 
+    keymaps = [
+      {
+        key = "\\";
+        mode = "n";
+        silent = true;
+        action = "<Cmd>Neotree toggle<CR>";
+        desc = "Neotree toggle";
+      }
+      {
+        key = "<Tab>";
+        mode = "n";
+        silent = true;
+        action = "<Cmd>bnext<CR>";
+        desc = "next buffer";
+      }
+      {
+        key = "<S-Tab>";
+        mode = "n";
+        silent = true;
+        action = "<Cmd>bprevious<CR>";
+        desc = "bprevious buffer";
+      }
+      {
+        key = "<F5>";
+        mode = "n";
+        silent = true;
+        action = "<cmd>RunFile<cr>";
+        desc = "run file";
+      }
+      {
+        key = "<leader>tt";
+        mode = "n";
+        silent = true;
+        action = "<cmd>Themify<cr>";
+        desc = "themes";
+      }
+    ];
+
     languages = {
       enableLSP = true;
       enableTreesitter = true;
