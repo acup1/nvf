@@ -5,8 +5,17 @@
 }: {
   vim = {
     lazy.enable = true;
-    lazy.enableLznAutoRequire = false;
+    lazy.enableLznAutoRequire = true;
     lazy.plugins = {
+      #lzn-auto-require = {
+      #  package = "lzn-auto-require";
+      #  setupModule = "lzn-auto-require";
+      #  after = ''require("lzn-auto-require").enable()'';
+      #};
+      #lz-n = {
+      #  package = "lz-n";
+      #  setupModule = "lz-n";
+      #};
       "LazyVim" = {
         package = pkgs.vimPlugins.LazyVim;
         setupModule = "lazyvim";
@@ -20,8 +29,8 @@
       name = "onedark";
       style = "dark";
     };
-    statusline.lualine.enable = true;
-    telescope.enable = true;
+    #statusline.lualine.enable = true;
+    #telescope.enable = true;
     autocomplete.nvim-cmp.enable = true;
 
     keymaps = [
@@ -31,6 +40,13 @@
         silent = true;
         action = "<Cmd>Neotree toggle<CR>";
         desc = "Neotree toggle";
+      }
+      {
+        key = "<c-?>";
+        mode = "n";
+        silent = true;
+        action = "<Cmd>ToggleTerm<CR>";
+        desc = "ToggleTerm";
       }
       {
         key = "<Tab>";
