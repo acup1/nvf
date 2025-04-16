@@ -76,6 +76,14 @@
         action = "<cmd>Themify<cr>";
         desc = "themes";
       }
+      {
+        key = "<D-Space>";
+        mode = ["n" "i"];
+        silent = true;
+        noremap = true;
+        action = "<Nop>";
+        desc = "DONT WRITE THIS!!!";
+      }
     ];
 
     languages = {
