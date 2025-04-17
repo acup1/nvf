@@ -38,8 +38,8 @@
         key = "\\";
         mode = "n";
         silent = true;
-        action = "<Cmd>Neotree toggle<CR>";
-        desc = "Neotree toggle";
+        action = "<Cmd>Yazi toggle<CR>";
+        desc = "Yazi toggle";
       }
       {
         key = "<c-?>";

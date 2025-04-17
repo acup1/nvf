@@ -10,5 +10,6 @@ require("lazy").setup({
 		{ "acup1/nvf", import = "plugins" },
 		{ "mfussenegger/nvim-dap" },
 		{ "rcarriga/nvim-dap-ui" },
+		{ "mikavilpas/yazi.nvim" },
 	},
 })
