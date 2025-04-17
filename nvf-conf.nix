@@ -23,7 +23,7 @@
         after = builtins.readFile ./lazy.lua;
       };
     };
-    filetree.neo-tree.enable = true;
+    filetree.neo-tree.enable = false;
     theme = {
       enable = true;
       name = "onedark";
