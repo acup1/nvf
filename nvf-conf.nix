@@ -23,7 +23,7 @@
         after = builtins.readFile ./lazy.lua;
       };
     };
-    filetree.neo-tree.enable = false;
+    filetree.neo-tree.enable = true;
     theme = {
       enable = true;
       name = "onedark";
@@ -36,6 +36,13 @@
     keymaps = [
       {
         key = "\\";
+        mode = "n";
+        silent = true;
+        action = "<Cmd>Neotree toggle<CR>";
+        desc = "Neotree toggle";
+      }
+      {
+        key = "<c-Y>";
         mode = "n";
         silent = true;
         action = "<Cmd>Yazi toggle<CR>";
