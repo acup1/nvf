@@ -99,6 +99,7 @@
       enableFormat = true;
 
       nix.enable = true;
+      python.enable = true;
       clang.enable = true;
       lua.enable = true;
       bash.enable = true;
